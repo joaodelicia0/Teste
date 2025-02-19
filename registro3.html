@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>
+            pesquisa
+        </title>
+    </head>
+<!--required serve para o campo ser obrigatoriamente completo
+o \s server para deixar o espaço entre as letras-->
+    <body>
+        <form>
+            <input 
+            autocomplete="off" 
+            autofocus 
+            placeholder="email@escola.edu.br" 
+            type="email"
+            name="email" 
+            pattern=".+@.+\.edu\.\D{2}"
+            required
+            >
+
+            <input
+            placeholder="(DD) 99999-9999" 
+            type="text"
+            name="tel" 
+            pattern="\(\d{2}\)\s\d{5}-\d{4}"
+            required
+            >
+
+            <button>registrar</button>
+        
+        </form>
+        
+    </body>
+    
+</html>
